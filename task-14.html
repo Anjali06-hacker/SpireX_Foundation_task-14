@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePlus Hospital</title>
+    <link rel="stylesheet" href="task-14.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            CarePlus Hospital
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#services">Services</a>
+            <a href="#appointment">Appointment</a>
+        </nav>
+    </header>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div>
+            <h1>Welcome to CarePlus Hospital</h1>
+            <p>
+                Quality healthcare and professional medical services
+                for you and your family.
+            </p>
+            <a href="#appointment" class="hero-button">
+                Book an Appointment
+            </a>
+        </div>
+    </section>
+    <!-- Doctors Section -->
+    <section id="doctors">
+        <h2>Our Doctors</h2>
+        <div class="doctor-container">
+            <div class="doctor-card">
+                <div class="doctor-icon">👨‍⚕️</div>
+                <h3>Dr. Raj Sharma</h3>
+                <p>Cardiologist</p>
+                <p>
+                    10+ years of medical experience.
+                </p>
+            </div>
+            <div class="doctor-card">
+                <div class="doctor-icon">👩‍⚕️</div>
+                <h3>Dr. Priya Singh</h3>
+                <p>Dermatologist</p>
+                <p>
+                    Specialist in skin and hair care.
+                </p>
+            </div>
+            <div class="doctor-card">
+                <div class="doctor-icon">👨‍⚕️</div>
+                <h3>Dr. Amit Kumar</h3>
+                <p>General Physician</p>
+                <p>
+                    Provides general medical consultation.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>❤️ Cardiology</h3>
+                <p>Heart-related consultation and treatment.</p>
+            </div>
+            <div class="service">
+                <h3>🩺 General Checkup</h3>
+                <p>Complete health checkup and consultation.</p>
+            </div>
+            <div class="service">
+                <h3>💊 Pharmacy</h3>
+                <p>Medicines and pharmaceutical services.</p>
+            </div>
+            <div class="service">
+                <h3>🚑 Emergency Care</h3>
+                <p>Emergency medical assistance.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Appointment Section -->
+    <section id="appointment">
+        <h2>Book an Appointment</h2>
+        <form id="appointmentForm">
+            <label for="patientName">
+                Patient Name
+            </label>
+            <input
+                type="text"
+                id="patientName"
+                placeholder="Enter your name"
+                required
+            >
+            <label for="email">
+                Email
+            </label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+            <label for="doctor">
+                Select Doctor
+            </label>
+            <select id="doctor" required>
+                <option value="">
+                    Select a doctor
+                </option>
+                <option value="Dr. Raj Sharma">
+                    Dr. Raj Sharma - Cardiologist
+                </option>
+                <option value="Dr. Priya Singh">
+                    Dr. Priya Singh - Dermatologist
+                </option>
+                <option value="Dr. Amit Kumar">
+                    Dr. Amit Kumar - General Physician
+                </option>
+            </select>
+            <label for="date">
+                Appointment Date
+            </label>
+            <input
+                type="date"
+                id="date"
+                required
+            >
+            <label for="time">
+                Appointment Time
+            </label>
+            <select id="time" required>
+                <option value="">
+                    Select time
+                </option>
+                <option value="10:00 AM">
+                    10:00 AM
+                </option>
+                <option value="11:00 AM">
+                    11:00 AM
+                </option>
+                <option value="12:00 PM">
+                    12:00 PM
+                </option>
+                <option value="2:00 PM">
+                    2:00 PM
+                </option>
+                <option value="3:00 PM">
+                    3:00 PM
+                </option>
+                <option value="4:00 PM">
+                    4:00 PM
+                </option>
+            </select>
+            <button type="submit">
+                Book Appointment
+            </button>
+        </form>
+        <!-- Confirmation message -->
+        <div id="confirmation"></div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 CarePlus Hospital | All Rights Reserved
+        </p>
+    </footer>
+    <script src="task-14.js"></script>
+</body>
+</html>
